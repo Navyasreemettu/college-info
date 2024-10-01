@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <style>
+        .bd {
+            background-color: rgb(211, 211, 211);
+        }
+
+        .copyright {
+            background-color: rgb(43, 44, 44);
+            padding: 40px 0;
+            color: aliceblue;
+            text-align: center;
+        }
+
+        form table {
+            margin: 20px auto;
+        }
+
+        form input, form select, form textarea {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        form input[type="submit"], form input[type="reset"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="bd">
+    <h1>Hindu College Of Engineering And Technology</h1>
+    <h2>REGISTRATION FORM</h2>
+    <form action="submit-form.php" method="post">
+        <table>
+            <tr>
+                <td><label for="first_name">First Name:</label></td>
+                <td><input type="text" id="first_name" name="first_name" placeholder="First Name" required></td>
+            </tr>
+            <tr>
+                <td><label for="last_name">Last Name:</label></td>
+                <td><input type="text" id="last_name" name="last_name" placeholder="Last Name" required></td>
+            </tr>
+            <tr>
+                <td><label for="father_name">Father's Name:</label></td>
+                <td><input type="text" id="father_name" name="father_name" placeholder="Father's Name" required></td>
+            </tr>
+            <tr>
+                <td><label for="mother_name">Mother's Name:</label></td>
+                <td><input type="text" id="mother_name" name="mother_name" placeholder="Mother's Name" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td>
+                    <input type="email" id="email" name="email" placeholder="Email" required 
+                           pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td>
+                    <input type="password" id="password" name="password" placeholder="Password" required 
+                           minlength="8" maxlength="20">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="phone_no">Phone No:</label></td>
+                <td>
+                    <input type="tel" id="phone_no" name="phone_no" placeholder="Phone No" required 
+                           pattern="[0-9]{10}">
+                </td>
+            </tr>
+            <tr>
+                <td><label>Gender:</label></td>
+                <td>
+                    <input type="radio" id="gender_male" name="gender" value="male" required> 
+                    <label for="gender_male">Male</label>
+                    <input type="radio" id="gender_female" name="gender" value="female" required> 
+                    <label for="gender_female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date of Birth:</label></td>
+                <td><input type="date" id="dob" name="dob" required></td>
+            </tr>
+            <tr>
+                <td><label>Hobbies:</label></td>
+                <td>
+                    <input type="checkbox" id="hobbies_singing" name="hobbies" value="singing"> 
+                    <label for="hobbies_singing">Singing</label>
+                    <input type="checkbox" id="hobbies_dancing" name="hobbies" value="dancing"> 
+                    <label for="hobbies_dancing">Dancing</label>
+                    <input type="checkbox" id="hobbies_reading" name="hobbies" value="reading"> 
+                    <label for="hobbies_reading">Reading</label>
+                    <input type="checkbox" id="hobbies_playing" name="hobbies" value="playing"> 
+                    <label for="hobbies_playing">Playing</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="course">Choose Course:</label></td>
+                <td>
+                    <select id="course" name="course" required>
+                        <option value="">Select Option</option>
+                        <option value="btech">B.Tech</option>
+                        <option value="diploma">Diploma</option>
+                        <option value="mba">MBA</option>
+                        <option value="mca">MCA</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td>
+                    <textarea id="address" name="address" rows="4" cols="15" placeholder="Address" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>  
+    <footer>
+        <div class="copyright"> 
+            <p>&copy; 2023 Hindu College Of Engineering And Technology. All Rights Reserved.<br>
+            Designed by Hindu College of Engineering & Technology, Guntur</p>
+        </div> 
+    </footer>
+</body>
+</html>
